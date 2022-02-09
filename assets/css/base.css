@@ -3,7 +3,7 @@
     --black-color:#000;
     --text-color: #333;
     --primary-color: #ee4d2d;
-
+    --border-color : #dbdbdb;
 
 }
 *{
@@ -13,7 +13,7 @@
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 .grid{
@@ -37,3 +37,86 @@ html{
         opacity: 1;
     }
 }
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+}
+.modal__overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    
+
+}
+/* Button style */
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background: var(--white-color);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn.btn--normal:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background: var(--primary-color);
+    
+}
+.btn.btn--disabled{
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+
+
+}
+.auth-form__socials-icon{
+    font-size: 1.8rem;
+}
+.auth-form__socials--fb{
+    color: var(--white-color);
+    background: #3a5a98;
+}
+
+.auth-form__socials--fb,
+.auth-form__socials-icon{
+    color: var(--white-color);
+
+}
+
+.auth-form__socials-title{
+    margin: 0 32px;
+}
+.auth-form__socials--google{
+    color: #666;
+    background-color:var(--white-color);
+}
+  
